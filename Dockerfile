@@ -18,8 +18,7 @@ RUN apt-get -y install htop clamav clamav-daemon
 
 # 3) install packages using notebook user
 # manually creating user using useradd cmd
-RUN useradd -ms /bin/bash dominic
-USER dominic
+USER $NB_UID
 
 # RUN conda install -y scikit-learn
 
