@@ -16,7 +16,7 @@ USER root
 RUN apt-get update
 RUN apt-get -y install htop clamav clamav-daemon
 # test btop
-RUN apt-get -y install bpytop
+# RUN apt-get -y install bpytop
 
 # 3) install packages using notebook user
 USER $NB_UID
