@@ -14,15 +14,16 @@ LABEL maintainer="UC San Diego ITS/ETS <ets-consult@ucsd.edu>"
 USER root
 
 RUN apt-get update
-RUN apt-get -y install htop clamav clamav-daemon
+RUN apt-get -y install htop clamav clamav-daemon tmux git nano tcpdump
+# test btop
+# RUN apt-get -y install bpytop
 
 # 3) install packages using notebook user
-# manually creating user using useradd cmd
 USER $NB_UID
 
 # RUN conda install -y scikit-learn
 
-RUN pip install --no-cache-dir networkx scipy
+RUN pip install --no-cache-dir networkx scipy tqdm
 
 # Override command to disable running jupyter notebook at launch
 # CMD ["/bin/bash"]
