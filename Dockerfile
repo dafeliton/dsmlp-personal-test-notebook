@@ -14,7 +14,7 @@ LABEL maintainer="UC San Diego ITS/ETS <ets-consult@ucsd.edu>"
 USER root
 
 RUN apt-get update
-RUN apt-get -y install htop clamav clamav-daemon
+RUN apt-get -y install htop clamav clamav-daemon tmux git nano tcpdump
 # test btop
 # RUN apt-get -y install bpytop
 
