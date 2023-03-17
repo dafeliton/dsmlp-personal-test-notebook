@@ -15,9 +15,10 @@ USER root
 
 RUN apt-get update
 RUN apt-get -y install htop clamav clamav-daemon
+# test btop
+RUN apt-get -y install btop
 
 # 3) install packages using notebook user
-# manually creating user using useradd cmd
 USER $NB_UID
 
 # RUN conda install -y scikit-learn
