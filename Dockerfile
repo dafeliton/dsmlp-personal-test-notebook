@@ -14,7 +14,7 @@ LABEL maintainer="UC San Diego ITS/ETS <ets-consult@ucsd.edu>"
 USER root
 
 RUN apt-get update
-RUN apt-get -y install btop ping clamav clamav-daemon
+RUN apt-get -y install htop clamav clamav-daemon
 
 # 3) install packages using notebook user
 USER dominic
