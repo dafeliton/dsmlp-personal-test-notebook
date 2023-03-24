@@ -23,7 +23,7 @@ USER $NB_UID
 
 # RUN conda install -y scikit-learn
 
-RUN pip install --no-cache-dir networkx scipy tqdm ipywidgets numpy pandas geopandas keplergl
+RUN pip install --no-cache-dir networkx scipy tqdm ipywidgets numpy pandas geopandas keplergl mesa-geo
 
 # Override command to disable running jupyter notebook at launch
 # CMD ["/bin/bash"]
